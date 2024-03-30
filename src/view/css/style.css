@@ -1,0 +1,16 @@
+/* deem uma boa olhada no layout/prótotipo antes de começar a codar */
+
+
+/* reset */
+* {
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-blue: #008cff; /* cor para background */
+    --text-color: #fbfffc; /* cor para textos */
+    --orange: #ed7e00; /* cor principal dos itens */
+}
