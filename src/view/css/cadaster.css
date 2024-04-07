@@ -26,14 +26,12 @@ h2 {
 .user, .pet {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: var(--text-color);
-    border: black;
     border-radius: 20px;
-    width: 500px;
-    /* padding: 10px; */
-    /* gap: 5px; */
+    width: 400px;
+    padding: 20px;
 }
 
 form {
@@ -46,18 +44,35 @@ fieldset {
     display: flex;
     flex-direction: column;
     border: none;
+    margin-top: 12px;
+    gap: 20px;
     font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 input, select, button {
     background-color: #e4e4e4;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 10px;
     border: none;
-    width: 200px;
+    width: 255px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
 }
 
 .field {
-    padding: 12px;
+    padding: 4px;
 }
+
+.button {
+    background-color: var(--orange);
+    color: var(--text-color);
+    margin-top: 4px;
+    font-weight: 700;
+}
+
 
