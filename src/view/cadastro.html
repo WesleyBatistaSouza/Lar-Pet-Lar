@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lar Pet Lar</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./css/cadaster.css">
 </head>
 <body>
-    <div class="container">
-        <!-- antes de começarem a codar, pesquisem sobre semântica html. exemplo: https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics -->
-        <header></header>
-        <main></main>
-        <footer></footer>
-    </div>
+    <form>
+        <fieldset>
+            <h2>Usuário</h2>
+            <section class="user" id="user">
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome*" maxlength="40" required>
+                </div>
+                <div class="field">
+                    <label for="telephone">Telefone</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="(xx) xxxx-xxxx*" required>
+                </div>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail*" required>
+                </div>
+                <div class="field">
+                    <label for="address">Endereço</label>
+                    <input type="text" name="address" id="address" placeholder="Rua - Bairro - Cidade*" required>
+                </div>
+                <div class="field">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha*" required>
+                </div>
+            </section>
+            <h2>Pet</h2>
+            <section class="pet" id="pet">
+                <label for="name_pet">Nome do Pet</label>
+                <input type="text" name="name_pet" id="name_pet" placeholder="Digite o nome do pet*" required>
+            </div>
+            <div class="field">
+                <label for="gender">Gênero</label>
+                <select name="gender" id="gender" required>
+                    <option class="genderM">Macho</option>
+                    <option class="genderF">Fêmea</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="Weight">Peso</label>
+                <input type="number" name="Weight" id="Weight" placeholder="0.00kg" required>
+            </div>
+            <div class="field">
+                <label for="cub">Filhotes</label>
+                <input type="number" name="cub" id="cub" placeholder="Digite o número de filhotes*" required>
+            </div>
+            <div class="field">
+                <label for="castration">Castramento</label>
+                <select name="castration" id="castration" required>
+                    <option class="castrated">Castrado</option>
+                    <option class="Nocastrated">Não Castrado</option>
+                </select>
+            </div>
+            <button class="button">Cadastre-se</button>
+            </section>
+        </fieldset>
+    </form>
 </body>
 </html>
