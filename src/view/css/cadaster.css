@@ -30,9 +30,11 @@ h2 {
     justify-content: center;
     background-color: var(--text-color);
     border-radius: 20px;
+    margin-bottom: 10px;
     width: 400px;
     padding: 20px;
 }
+
 
 form {
     display: flex;
@@ -57,7 +59,9 @@ input, select, button {
     padding: 10px;
     border: none;
     width: 255px;
+    outline: none;
 }
+
 
 label {
     display: block;
@@ -65,14 +69,20 @@ label {
 }
 
 .field {
-    padding: 4px;
+    padding: 5px;
 }
 
 .button {
     background-color: var(--orange);
     color: var(--text-color);
-    margin-top: 4px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
 }
+
+.button:hover {
+    background-color: #ff8c00;
+}
+
 
 
