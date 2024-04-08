@@ -78,6 +78,7 @@ label {
     margin-top: 10px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .button:hover {
