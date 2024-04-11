@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
@@ -17,57 +16,26 @@
 
 body {
     background-color: var(--bg-blue); 
+
 }
 
 h2 {
-  color: var(--text-color);
   text-align: center;
+  color:var(--text-color);
+  font-family: "Roboto", sans-serif;
 }
 
-.user, .pet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--text-color);
-    border-radius: 20px;
-    margin-bottom: 10px;
-    width: 400px;
-    padding: 20px;
-}
-
-.passed-container {
-    display: none;
-    position: relative;
-    align-items: end;
-    justify-content: flex-end;
-
-    transition: all .2s ease-in;
-}
-
-.passed {
-    position: fixed;
-    left: 40%;
-
-    background-color: green;
-    text-align: end;
-    padding: 40px;
-    font-size: 1.3rem;
-    color: var(--text-color);
-    width: 50%;
-    margin: 20px 40px 0px 0px;
-    border-radius: 10px;
-}
-
-.register {
-    display: block;
-    transition: all .5s ease-in-out;
-}
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 fieldset {
@@ -75,13 +43,16 @@ fieldset {
     flex-direction: column;
     border: none;
     margin-top: 12px;
+    padding: 20px;
     gap: 20px;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 700;
+    background-color:var(--text-color);
+    border-radius: 15px;
 }
 
-input, select, button {
+input, button {
     background-color: #e4e4e4;
     border-radius: 20px;
     padding: 10px;
@@ -94,6 +65,7 @@ input, select, button {
 label {
     display: block;
     margin-bottom: 2px;
+    text-align: center;
 }
 
 .field {
@@ -113,5 +85,17 @@ label {
     background-color: #ff8c00;
 }
 
+.btn {
+    display:flex;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-
+a{
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--orange);
+    cursor: pointer;
+    color: var(--orange);
+}

@@ -4,14 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lar Pet Lar</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/view/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- antes de começarem a codar, pesquisem sobre semântica html. exemplo: https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics -->
-        <header></header>
-        <main></main>
-        <footer></footer>
-    </div>
+    <header>
+        <div class="container">
+            <img src="./src/assets/image/logo.png" alt="Logo da ONG de Adoção Animal" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./src/view/pages/adotar.html">Adotar</a></li>
+                    <li><a href="./src/view/pages/cadastro.html">Cadastre-se</a></li>
+                    <li><a href="./src/view/pages/login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="adotar" class="banner">
+            <div class="container">
+                <h2>Que tal adotar um animal?</h2>
+            </div>
+        </section>
+        <section id="quemsomos">
+            <div class="container">
+                <h2>Quem somos?</h2>
+                <p>Somos uma ONG dedicada a conectar animais abandonados com pessoas amorosas que podem dar a eles um lar seguro e carinhoso. Acreditamos que cada animal merece uma segunda chance e estamos aqui para facilitar essas conexões.</p>
+            </div>
+        </section>
+        <section id="historias">
+            <div class="container">
+                <article>
+                    <h2>Belinha e João</h2>
+                    <p>João sempre quis ter um cachorro e quando conheceu Belinha, uma vira-lata resgatada, ele soube que ela era a companheira que estava procurando. Hoje, eles são inseparáveis.</p>
+                </article>
+                <article>
+                    <h2>Mia e Maria</h2>
+                    <p>Maria nunca pensou que se tornaria uma "mãe de gato", mas quando ela encontrou Mia, uma gatinha abandonada, ela não resistiu. Agora, Mia traz alegria para sua casa todos os dias.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <h2>Entre em contato conosco</h2>
+                <form class="form">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem"></textarea><br>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 ONG de Adoção Animal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script type="module" src="./src/controller/register.js"></script>
+    <script type="module" src="./src/view/js/script.js"></script>
+    <script type="module" src="./src/controller/Animal.js"></script>
+    <script type="module" src="./src/view/js/script.js"></script>
 </body>
 </html>

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lar Pet Lar</title>
-    <link rel="stylesheet" href="./css/cadaster.css">
+    <link rel="stylesheet" href="../css/cadaster.css">
 </head>
 <body>
-    <form>
+        <form class="form">
         <fieldset>
             <h2>Usuário</h2>
             <section class="user" id="user">
@@ -49,7 +49,7 @@
             </div>
             <div class="field">
                 <label for="Weight">Peso</label>
-                <input type="number" name="Weight" id="Weight" placeholder="0.00kg" required>
+                <input type="number" name="Weight" id="weight" placeholder="0.00kg" required>
             </div>
             <div class="field">
                 <label for="cub">Filhotes</label>
@@ -59,8 +59,8 @@
                 <label for="castration">Castramento</label>
                 <select name="castration" id="castration" required>
                     <option selected disabled value="">Escolha a opção*</option>
-                    <option class="castrated">Castrado</option>
-                    <option class="Nocastrated">Não Castrado</option>
+                    <option value="castrated" class="castrated">Castrado</option>
+                    <option value="nocastrated" class="nocastrated">Não Castrado</option>
                 </select>
             </div>
             <div class="field">
@@ -69,5 +69,10 @@
             </section>
         </fieldset>
     </form>
+
+    <a href=""></a>
+
+     <!-- script -->
+     <script type="module" src="../../controller/register.controller.js"></script>
 </body>
 </html>

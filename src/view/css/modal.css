@@ -23,7 +23,13 @@ body {
 }
 
 form {
-    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -63,7 +69,7 @@ label {
     padding: 5px;
 }
 
-.button {
+button {
     background-color: var(--orange);
     color: var(--text-color);
     margin-top: 10px;
@@ -72,6 +78,6 @@ label {
     cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     background-color: #ff8c00;
 }
