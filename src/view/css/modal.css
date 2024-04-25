@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-blue: #008cff; /* cor para background */
+    --text-color: #fbfffc; /* cor para textos */
+    --orange: #ed7e00; /* cor principal dos itens */
+}
+
+body {
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-texturizado-abstrato_1258-30515.jpg?w=360);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+
+}
+
+form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: var(--text-color);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input, select, button {
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    width: 255px;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.field {
+    padding: 5px;
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--text-color);
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff8c00;
+}

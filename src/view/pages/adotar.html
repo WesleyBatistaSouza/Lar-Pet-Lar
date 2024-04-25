@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Pet Lar</title>
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <main>
+        <h2>Cadastre um novo Pet</h2>
+        <button id="modal">Adicionar pet</button>
+        <form  class="modal">
+            <fieldset>
+                <div class="field">
+                    <label for="name_pet">Nome do Pet</label>
+                    <input type="text" name="name_pet" id="name_pet" placeholder="Digite o nome do pet*" required>
+                </div>
+            
+            <div class="field">
+                <label for="gender">Gênero</label>
+                <select name="gender" id="gender" required>
+                    <option selected disabled value="">Escolha o gênero*</option>
+                    <option class="genderM">Macho</option>
+                    <option class="genderF">Fêmea</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="weight">Peso</label>
+                <input type="number" name="weight" id="weight" placeholder="0.00kg" required>
+            </div>
+            <div class="field">
+                <label for="cub">Filhotes</label>
+                <input type="number" name="cub" id="cub" placeholder="Digite o número de filhotes*" required>
+            </div>
+            <div class="field">
+                <label for="castration">Castramento</label>
+                <select name="castration" id="castration" required>
+                    <option selected disabled value="">Escolha a opção*</option>
+                    <option class="castrated">Castrado</option>
+                    <option class="Nocastrated">Não Castrado</option>
+                </select>
+            </div>
+            <div class="field">
+                <button class="button">Editar animal</button>
+            </div>
+            </fieldset>
+        </form>
+</main>
+
+    <script src="../js/script.js" type="module"></script>
+</body>
+</html>
