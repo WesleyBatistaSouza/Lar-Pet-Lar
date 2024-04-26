@@ -17,6 +17,7 @@
                     <li><a href="../src/view/pages/adopt.html">Adotar</a></li>
                     <li><a href="../src/view/pages/cadaster.html">Cadastre-se</a></li>
                     <li><a href="../src/view/pages/login.html">Entrar</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -47,47 +48,33 @@
                     <h2>Mia e Maria</h2>
                     <p>Maria nunca pensou que se tornaria uma "mãe de gato", mas quando ela encontrou Mia, uma gatinha abandonada, ela não resistiu. Agora, Mia traz alegria para sua casa todos os dias.</p>
                 </article>
-                <article>
-                    <h2>Mel e Camilla</h2>
-                    <p>Eu nunca pensei que seria mãe de um pet, até adotar a mel, ela traz uma alegria para a casa que não tem como eu explicar.</p>
-                </article>
-                <article>
-                    <h2>Fred e Eduardo</h2>
-                    <p>Sempre adorei animais, e não consigo ver um animal na rua, toda vez que eu vejo, eu pego para criar, foi aonde eu encontrei o Fred. </p>
-                </article>
-                <article>
-                    <h2>Claúdia e Ralph</h2>
-                    <p>Certo dia, saindo do trabalho, sua mãe encontrou um filhote de vira-lata abandonado em um caixa de papelão. Ela então resolve leva-lo para sua casa, começa a cuidar e por consequência acabou se apegando ao filhote, que carinhosamente o chamou de Ralph e hoje são inseparáveis.</p>
-                </article>
-                <article>
-                    <h2>Edu e Mel</h2>
-                    <p>Edu se sentia muito soliário, sentia falta de uma compainha em sua vida, certo dia, ele encontrou uma vira-lata caramelo em situação de rua e acabou a resgatando. Essa é a história de Mel, a melhor amiga e companheira de Edu.</p>
-                </article>
             </div>
         </section>
         <section id="contato">
             <div class="container">
                 <h2>Entre em contato conosco</h2>
-                <form id="formMessage" class="form">
+                <form class="form">
                     <label for="nome">Nome:</label><br>
                     <input type="text" id="nome" name="nome"><br>
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email"><br>
                     <label for="mensagem">Mensagem:</label><br>
                     <textarea id="mensagem" name="mensagem"></textarea><br>
-                    <button type="submit" class="button">Enviar</button>
+                    <button>Enviar</button>
                 </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>Lar Pet Lar ©2024. Todos os direitos reservados.</p>
-            <h2 id="animal"></h2>
+            <p>© 2024 ONG de Adoção Animal. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <!-- script -->
+    <script type="module" src="./src/controller/register.js"></script>
+    <script type="module" src="./src/view/js/script.js"></script>
+    <script type="module" src="./src/controller/Animal.js"></script>
     <script type="module" src="./src/view/js/script.js"></script>
 </body>
 </html>
