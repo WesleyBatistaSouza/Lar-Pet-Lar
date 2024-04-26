@@ -13,11 +13,6 @@
     --orange: #ed7e00; /* cor principal dos itens */
 }
 
-body {
-    background: url(https://img.freepik.com/fotos-gratis/fundo-texturizado-abstrato_1258-30515.jpg?w=360) center no-repeat;
-    background-size: cover;
-}
-
 .container {
     width: 100%; 
     display: flex;
@@ -200,7 +195,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    background-color: var(--text-color);
+    background-color: var(--bg-blue);
     border-radius: 20px;
     border: none;
     margin-bottom: 10px;
@@ -243,5 +238,21 @@ button:hover {
 }
 
 .infoPet {
-    background-color: #f4f4f4f4;
+    background-color: var(--bg-blue);
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoPet p {
+    color: var(--text-color);
+    margin: 10px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
