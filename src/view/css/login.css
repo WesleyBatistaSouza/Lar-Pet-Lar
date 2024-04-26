@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-blue: #008cff; /* cor para background */
+    --text-color: #fbfffc; /* cor para textos */
+    --orange: #ed7e00; /* cor principal dos itens */
+}
+
+body {
+    background-color: var(--bg-blue); 
+
+}
+
+h2 {
+  text-align: center;
+  color:var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 12px;
+    padding: 20px;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color:var(--text-color);
+    border-radius: 15px;
+}
+
+input, button {
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    width: 255px;
+    outline: none;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.field {
+    padding: 5px;
+}
+
+.button {
+    background-color: var(--orange);
+    color: var(--text-color);
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff8c00;
+}
+
+.btn {
+    display:flex;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--orange);
+    cursor: pointer;
+    color: var(--orange);
+}
