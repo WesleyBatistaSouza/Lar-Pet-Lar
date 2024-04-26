@@ -1,0 +1,250 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --bg-blue: #008cff; /* cor para background */
+    --text-color: #fbfffc; /* cor para textos */
+    --orange: #ed7e00; /* cor principal dos itens */
+}
+
+body {
+    background: url(https://img.freepik.com/fotos-gratis/fundo-texturizado-abstrato_1258-30515.jpg?w=360) center no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    background-color: #1a75ff;
+    padding: 2em;
+    color: #fff;
+}
+
+#logo {
+    height: 50px;
+    filter: invert(1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+  a {
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+  a::after{
+    content:"";
+    width: 0px;
+    height: 3px;
+    background-image: linear-gradient(45deg ,#ed7e00, #ed7e00);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+ nav a:hover::after{
+    width: 60%;
+}
+
+.text-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+  .image-box {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    border: 2.5px solid #1a75ff;
+    padding: 10px;
+  }
+
+  .image-box img {
+    display: flex;
+    width: 150px;
+    height: auto;
+    margin-bottom: 8px;
+    object-fit: cover;
+  }
+      
+      .footer {
+          background-color: #fff;
+          padding: 0px;
+      }
+      
+      .footer-logo {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+      }
+      
+      .footer-logo img {
+          width: 100px;
+          height: 100px;
+          margin: 0 100px;
+      }
+      
+      .footer-info {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      
+      .button {
+          display: inline-block;
+          background-color: #ed7e00;
+          color: white;
+          padding: 10px 20px;
+          margin-top: 30px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .button:hover {
+          background-color: #d8801b;
+      }
+      
+/* modal */
+
+.form-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    transition: .4s ease-in;
+
+    background-color: #008cff;
+    position: relative;
+}
+
+.open {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    animation: open .5s;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.close-icon {
+    font-size: 2rem;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -90px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: var(--text-color);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input, select, button {
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    width: 255px;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.field {
+    padding: 5px;
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--text-color);
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff8c00;
+}
+
+.infoPet {
+    background-color: #f4f4f4f4;
+}

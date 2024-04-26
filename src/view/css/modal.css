@@ -14,24 +14,59 @@
 }
 
 body {
-    background-image: url(https://img.freepik.com/fotos-gratis/fundo-texturizado-abstrato_1258-30515.jpg?w=360);
+    background: url(https://img.freepik.com/fotos-gratis/fundo-texturizado-abstrato_1258-30515.jpg?w=360) center no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(10px);
+}
 
+.form-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 form {
     display: none;
     align-items: center;
     justify-content: center;
+
+    transition: .4s ease-in;
+    position: absolute;
+    top: 0;
 }
 
 .open {
     display: block;
     align-items: center;
     justify-content: center;
+    animation: open .5s;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 18%;
+    left: 90%;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.close-icon {
+    font-size: 2rem;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -90px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 fieldset {

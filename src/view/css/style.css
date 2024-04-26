@@ -6,10 +6,12 @@ body {
     box-sizing: border-box;
     background-color: #e2e2e2;
 }
+
 .container {
     width: 80%; 
     margin: auto;
 }
+
 header {
     background-color: #1a75ff;
     padding: 2em 0;
@@ -20,9 +22,10 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+
 #logo {
     height: 50px;
-    
+    filter: invert(1);
 }
 nav ul {
     list-style-type: none;
@@ -30,7 +33,6 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin-right: 1em;
 }
 nav ul li a {
     text-decoration: none;
@@ -41,7 +43,7 @@ nav ul li a {
     width: 50%;
 }
 
-.menu nav a{
+ a {
     color: #c4c4c4;
     text-decoration: none;
     font-size: 18px;
@@ -51,19 +53,19 @@ nav ul li a {
     position: relative;
 }
 
-.menu nav a::after{
+ a::after{
     content:"";
     width: 0px;
     height: 4px;
-    background-image: linear-gradient(45deg ,#1a75ff, #1a75ff);
+    background-image: linear-gradient(45deg ,#ed7e00, #ed7e00);
     position: absolute;
     bottom: 0;
     left: 0;
     transition: width 0.5s;
 }
 
-.menu nav a:hover::after{
-    width: 30px;
+ a:hover::after{
+    width: 60%;
 }
 
 
@@ -143,3 +145,22 @@ footer p {
     margin: 0;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    width: 50%;
+    height: 30px;
+}
+
+.button {
+    width: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #ed7e00;
+    cursor: pointer;
+}

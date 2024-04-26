@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lar Pet Lar</title>
-    <link rel="stylesheet" href="./view/css/style.css">
-    <link rel="stylesheet" href="../src/view/Sobre/Sobre.html">
+    <link rel="stylesheet" href="./src/view/css/style.css">
+    <!-- <link rel="stylesheet" href="./src/view/css/adopt.css"> -->
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="./assets/image/logo.png" alt="Logo da ONG de Adoção Animal" id="logo">
+            <img src="./src/assets/image/logo.png" alt="Logo da ONG de Adoção Animal" id="logo">
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="../src/view/Sobre/Sobre.html">Sobre</a></li>
-                    <li><a href="../src/view/pages/adoção.html">Adotar</a></li>
-                    <li><a href="../src/view/pages/cadastro.html">Cadastre-se</a></li>
+                    <li><a href="../src/view/pages/adopt.html">Adotar</a></li>
+                    <li><a href="../src/view/pages/cadaster.html">Cadastre-se</a></li>
                     <li><a href="../src/view/pages/login.html">Entrar</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -50,28 +48,26 @@
         <section id="contato">
             <div class="container">
                 <h2>Entre em contato conosco</h2>
-                <form class="form">
+                <form id="formMessage" class="form">
                     <label for="nome">Nome:</label><br>
                     <input type="text" id="nome" name="nome"><br>
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email"><br>
                     <label for="mensagem">Mensagem:</label><br>
                     <textarea id="mensagem" name="mensagem"></textarea><br>
-                    <button>Enviar</button>
+                    <button type="submit" class="button">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>© 2024 ONG de Adoção Animal. Todos os direitos reservados.</p>
+            <p>Lar Pet Lar ©2024. Todos os direitos reservados.</p>
+            <h2 id="animal"></h2>
         </div>
     </footer>
 
     <!-- script -->
-    <script type="module" src="./src/controller/register.js"></script>
-    <script type="module" src="./src/view/js/script.js"></script>
-    <script type="module" src="./src/controller/Animal.js"></script>
     <script type="module" src="./src/view/js/script.js"></script>
 </body>
 </html>

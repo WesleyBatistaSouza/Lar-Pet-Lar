@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lar Pet Lar</title>
-
-	<title>Animais Diaponiveis </title>
-	<link rel="stylesheet" type="text/css" href="/src/view/css/style.css">
-    <link rel="stylesheet" href="/src/view/css/adotar.css">
-    <script src="/src/view/js/AnimacaoTitulo.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="/src/view/css/style.css"> -->
+    <link rel="stylesheet" href="/src/view/css/adopt.css">
 </head>
 <body>
     <header>
@@ -16,17 +13,16 @@
             <img src="/src/assets/image/logo.png" alt="Logo da ONG de Adoção Animal" id="logo">
             <nav>
                 <ul>
-                    <li><a href="/src/index.html">Home</a></li>
-                    <li><a href="/src/view/Sobre/Sobre.html">Sobre</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="./adoção.html">Adotar</a></li>
-                    <li><a href="./cadastro.html">Cadastre-se</a></li>
+                    <li><a href="./cadaster.html">Cadastre-se</a></li>
                     <li><a href="./login.html">Entrar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
   
-    <div class="text-center"
+    <div class="text-center">
     <h1>Lar Pet Lar</h1>
       <h2>Transforme a vida de um animal e receba amor incondicional em troca.</h2>
   </div>
@@ -34,7 +30,7 @@
 </div>
 
     <br>
-    <h1>Animais disponíveis</h1>
+    <h2>Animais disponíveis</h2>
 
   <div class="image-container">
     <div class="image-box">
@@ -69,10 +65,8 @@
         <h3>Mia - A Gatinha Curiosa</h3>
         <p>Conheça Mia, uma gatinha adorável e curiosa que está pronta para explorar cada cantinho da sua casa. Com sua personalidade curiosa e travessa, ela vai manter você entretido o tempo todo. Se você procura uma companheira divertida e cheia de vida, adote a Mia e descubra o quão maravilhoso é ter uma gatinha curiosa em sua vida.</p>
         <a href="/src/view/pages/cadastro.html" class="button">Me Adote</a>
-
     
       </div>
-      
       <div class="image-box">
         <img src="/src/assets/image/Dog3.jpeg" alt="Imagem 5">
         <h3>Bella - A Cadelinha Doce</h3>
@@ -106,8 +100,6 @@
         <h3>Sophie - A Gatinha Encantadora</h3>
         <p>Conheça Sophie, uma gatinha encantadora com olhos brilhantes e uma personalidade cativante. Ela é brincalhona, adora receber carinho e tem um ronronar que acalma qualquer coração. Se você está procurando por uma companheira felina que traga alegria e encanto para sua vida, adote a Sophie e desfrute de momentos inesquecíveis juntos.</p>
         <a href="/src/view/pages/cadastro.html" class="button">Me Adote</a>
-
-     
       </div>
       
       
@@ -116,25 +108,69 @@
         <h3> Cooper - O Cãozinho Inteligente</h3>
         <p>Cooper é um cãozinho inteligente e esperto que adora aprender e se desafiar. Ele está sempre pronto para novas aventuras e é um ótimo aluno em treinamentos. Se você está procurando um cão leal e inteligente que esteja disposto a aprender e se adaptar, adote o Cooper e descubra a incrível conexão que vocês podem construir.</p>
         <a href="/src/view/pages/cadastro.html" class="button">Me Adote</a>
-
-    
       </div>
-     
-
-
 </div>
-
-
-
-
     </div>
   </div>
 
 <br>
+
+<!-- pet list -->
+<div>
+    <div id="petList"></div>
+</div>
+<button id="modal">Adicionar Pet</button>
+<div class="form-container">
+    <form  class="modal">
+        <div class="close">
+            <div class="close-icon">
+                x
+            </div>
+        </div>
+
+<!-- modal para cadastrar novo pet -->
+<fieldset>
+  <div class="field">
+      <label for="name_pet">Nome do Pet</label>
+      <input type="text" name="name_pet" id="name_pet" placeholder="Digite o nome do pet*" required>
+  </div>
+
+<div class="field">
+  <label for="gender">Gênero</label>
+  <select name="gender" id="gender" required>
+      <option selected disabled value="">Escolha o gênero*</option>
+      <option class="genderM">Macho</option>
+      <option class="genderF">Fêmea</option>
+  </select>
+</div>
+<div class="field">
+  <label for="weight">Peso</label>
+  <input type="number" name="weight" id="weight" placeholder="0.00kg" required>
+</div>
+<div class="field">
+  <label for="cub">Filhotes</label>
+  <input type="number" name="cub" id="cub" placeholder="Digite o número de filhotes*" required>
+</div>
+<div class="field">
+  <label for="castration">Castramento</label>
+  <select name="castration" id="castration" required>
+      <option selected disabled value="">Escolha a opção*</option>
+      <option class="castrated">Castrado</option>
+      <option class="Nocastrated">Não Castrado</option>
+  </select>
+</div>
+<div class="field">
+  <button id="newPet" class="button">Novo animal</button>
+</div>
+</fieldset>
+</form>
+</div>
 <footer>
     <div class="container">
         <p>© 2024 ONG de Adoção Animal. Todos os direitos reservados.</p>
     </div>
 </footer>
+<!-- script -->
+<script type="module" src="../js/adopt.js"></script>
 </body>
 </html>

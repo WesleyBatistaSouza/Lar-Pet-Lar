@@ -31,6 +31,10 @@
                     <label for="password">Senha</label>
                     <input type="password" name="password" id="password" placeholder="Digite sua senha*" required>
                 </div>
+                <div class="field">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="passwordRepeat" placeholder="Digite sua senha novamente*" required>
+                </div>
             </section>
             <h2>Pet</h2>
             <section class="pet" id="pet">
@@ -43,8 +47,8 @@
                 <label for="gender">Gênero</label>
                 <select name="gender" id="gender" required>
                     <option selected disabled value="">Escolha o gênero*</option>
-                    <option class="genderM">Macho</option>
-                    <option class="genderF">Fêmea</option>
+                    <option value="true" class="genderM">Macho</option>
+                    <option value="false" class="genderF">Fêmea</option>
                 </select>
             </div>
             <div class="field">
@@ -69,9 +73,7 @@
             </section>
         </fieldset>
     </form>
-
-    <a href=""></a>
-
+    
      <!-- script -->
      <script type="module" src="../../controller/register.controller.js"></script>
 </body>
