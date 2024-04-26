@@ -2,7 +2,6 @@
 
 // validade login
 
-import validateUserData from "../../controller/register.controller";
 
 const formLogin = document.getElementById('loginForm');
 
@@ -29,17 +28,3 @@ formLogin.addEventListener('submit', function(event) {
        window.location.href = '/index.html';
 }, 1000); 
 });
-
-const emailInput = document.getElementById('email').value;
-const passwordInput = document.getElementById('password').value;
-
-
-const userLogin = {
-    emailInput: emailInput,
-    passwordInput: passwordInput
-}
-
-export function login() {
-    userLogin
-}
-login();
