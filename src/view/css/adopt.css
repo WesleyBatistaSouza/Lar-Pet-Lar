@@ -157,10 +157,7 @@ form {
     display: none;
     align-items: center;
     justify-content: center;
-
     transition: .4s ease-in;
-
-    background-color: #008cff;
     position: relative;
 }
 
